@@ -31,7 +31,7 @@ resource "aws_security_group" "public_http_sg" {
 
   egress {                               #outgoing traffic rules
     from_port   = 0                      #all ports are allowed
-    to_port     = 0
+    to_port     = 0                      #all ports are allowed
     protocol    = "-1"                   #any protocol
     cidr_blocks = ["0.0.0.0/0"]          #All traffic
   }
