@@ -23,8 +23,8 @@ resource "aws_security_group" "public_http_sg" {
   vpc_id      = aws_vpc.main_vpc.id
 
   ingress {                               #incoming traffic rules
-    from_port   = 80                      #only SSH port is allowed
-    to_port     = 80                      #only SSH port is allowed
+    from_port   = 80                      #only http port is allowed
+    to_port     = 80                      #only http port is allowed
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
