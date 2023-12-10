@@ -73,4 +73,4 @@ variable "test-dev-prod"{
 
 resource "aws_key_pair" "key" {
   key_name   = "aws-key-pair"
-  public_key = "ssh keygen"               # add public key here using command "ssh keygen"
+  public_key = "paste your key here"               # add public key here using command "ssh keygen"
